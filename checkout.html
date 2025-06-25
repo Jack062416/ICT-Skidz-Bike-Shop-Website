@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="checkout.css">
+    <script defer src="checkout.js"></script>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="left">
+            <h3>Billing Address</h3>
+            <div id="error"></div>
+            <form action="/" method="GET">
+            Full Name
+            <input type="text"  name="text" placeholder="Enter Your Name" required>
+            Address
+            <input type="text" name="text" placeholder="Enter Your Address" required>
+            City
+            <input type="text" name="text" placeholder="Enter Your City" required>
+            <div id="zip">
+                <label>
+                    Region
+                    <select>
+                    <option>Luzon</option>
+                    <option>Visayas</option>
+                    <option>Mindanao</option>
+                    </select>
+                </label>
+                <label>
+             Zip Code
+                <br><input type="number" name="number" placeholder="Enter Your Zip Code" >
+                </label>
+             
+            </div>
+            </form>
+        </div>
+        <div class="right">
+        <h3>Payment</h3> 
+        <form>
+            Card <br>
+            <img src="image/card1.png" width="100">
+            <img src="image/card2.png" width="50">
+            <br><br>
+            Card Number
+            <input type="number" name="number" placeholder="Enter Your Card Number" required>
+            Card Password
+            <input type="password" name="password" placeholder="Enter Your Card Password" required>
+            <div id="zip">
+                <label>
+            Payment Method
+                    <select>
+            <option>Credit Card</option>
+                    </select>
+                </label>
+                <label>
+                  <br><br><input type="submit" onclick="alert('Fill Up First')"  value="Place Your Order">
+                </label>
+                
+                <label>
+               <br><br><br><br><br><input type="button" onclick="location.href='project.html'" value="Back To Website">
+                </label>
+            </div>
+            </form>
+       
+           
+            </div>
+
+     </div>
+    </div>
+
+</header>
+    
+</body>
+</html>
